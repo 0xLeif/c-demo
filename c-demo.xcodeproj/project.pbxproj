@@ -11,6 +11,7 @@
 		5CDD6D7F281DE718007C2546 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDD6D7E281DE718007C2546 /* ContentView.swift */; };
 		5CDD6D81281DE71A007C2546 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CDD6D80281DE71A007C2546 /* Assets.xcassets */; };
 		5CDD6D84281DE71A007C2546 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CDD6D83281DE71A007C2546 /* Preview Assets.xcassets */; };
+		5CDD6D8F281DFE43007C2546 /* CacheStore in Frameworks */ = {isa = PBXBuildFile; productRef = 5CDD6D8E281DFE43007C2546 /* CacheStore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CDD6D8F281DFE43007C2546 /* CacheStore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "c-demo";
+			packageProductDependencies = (
+				5CDD6D8E281DFE43007C2546 /* CacheStore */,
+			);
 			productName = "c-demo";
 			productReference = 5CDD6D79281DE718007C2546 /* c-demo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 5CDD6D70281DE718007C2546;
+			packageReferences = (
+				5CDD6D8D281DFE42007C2546 /* XCRemoteSwiftPackageReference "CacheStore" */,
+			);
 			productRefGroup = 5CDD6D7A281DE718007C2546 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5CDD6D8D281DFE42007C2546 /* XCRemoteSwiftPackageReference "CacheStore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0xOpenBytes/CacheStore";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5CDD6D8E281DFE43007C2546 /* CacheStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CDD6D8D281DFE42007C2546 /* XCRemoteSwiftPackageReference "CacheStore" */;
+			productName = CacheStore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5CDD6D71281DE718007C2546 /* Project object */;
 }
