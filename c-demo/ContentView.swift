@@ -9,21 +9,40 @@ import c
 import CacheStore
 import SwiftUI
 
+enum ContentViewKey {
+    case value
+    case emoji
+    case randomBool
+}
+
 struct ContentView: View {
-    @ObservedObject var cacheStore: CacheStore<CacheKey> = c.resolve("CacheStore")
+    @ObservedObject var cacheStore: CacheStore<ContentViewKey> = c.resolve("ContentCacheStore")
     
     var stringValue: String {
-        cacheStore.resolve(.someValue)
+        cacheStore.resolve(.emoji)
     }
     
     var body: some View {
         VStack {
-            Text("Current Value: \(stringValue)")
+            Text("Current Emoji: \(stringValue)")
+            
+            TextField("Emoji", text: cacheStore.binding(.emoji))
+            
+            if cacheStore.contains(.randomBool) {
+                Toggle("bool", isOn: cacheStore.binding(.randomBool))
+            }
+            
             Button("Update Value") {
-                cacheStore.set(value: ":D", forKey: .someValue)
+                cacheStore.set(value: ":D", forKey: .value)
+            }
+            
+            if let value: String = cacheStore.get(.value) {
+                Text("Value: \(value)")
             }
         }
+        .background(Color.gray)
         .padding()
+        
     }
 }
 
@@ -31,7 +50,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(
             cacheStore: CacheStore(
-                initialValues: [.someValue: "Preview Cache Value"]
+                initialValues: [:]
             )
         )
     }
