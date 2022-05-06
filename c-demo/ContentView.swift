@@ -12,6 +12,7 @@ import SwiftUI
 enum ContentViewKey {
     case value
     case emoji
+    case randomBool
 }
 
 struct ContentView: View {
@@ -24,6 +25,13 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Current Emoji: \(stringValue)")
+            
+            TextField("Emoji", text: cacheStore.binding(.emoji))
+            
+            if cacheStore.contains(.randomBool) {
+                Toggle("bool", isOn: cacheStore.binding(.randomBool))
+            }
+            
             Button("Update Value") {
                 cacheStore.set(value: ":D", forKey: .value)
             }

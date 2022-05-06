@@ -20,7 +20,7 @@ struct DemoApp: App {
     @StateObject var cacheStore = CacheStore<CacheKey>(
         initialValues: [
             .someValue: "🥳",
-            .someOtherValue: "UH OH!"
+            .someOtherValue: { fatalError() }
         ]
     )
     

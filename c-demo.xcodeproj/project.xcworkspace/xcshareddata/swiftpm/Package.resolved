@@ -6,17 +6,17 @@
         "repositoryURL": "https://github.com/0xOpenBytes/c",
         "state": {
           "branch": null,
-          "revision": "9477c47d3802d983580fb0770c9869c9e9330a37",
-          "version": "0.3.0"
+          "revision": "92b1779ad2b4c551bdfd93f47b79a1399264b2dd",
+          "version": "1.0.1"
         }
       },
       {
         "package": "CacheStore",
         "repositoryURL": "https://github.com/0xOpenBytes/CacheStore",
         "state": {
-          "branch": "feature/scope",
-          "revision": "84d2b8dc03fdf8863182c6660e326aab947b0154",
-          "version": null
+          "branch": null,
+          "revision": "7d88695096888a4449722bbbf8d0f4ba2cfa6419",
+          "version": "1.1.0"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/0xOpenBytes/FLet",
         "state": {
           "branch": null,
-          "revision": "35a4a21a058661e59556c2870e5ed2351f58622f",
-          "version": "1.1.0"
+          "revision": "0ca1cd5a70e9f790bd3ef6f99c14e721bbce2386",
+          "version": "2.0.0"
         }
       },
       {
