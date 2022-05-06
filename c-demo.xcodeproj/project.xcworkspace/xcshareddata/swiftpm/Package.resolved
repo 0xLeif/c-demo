@@ -1,50 +1,52 @@
 {
-  "pins" : [
-    {
-      "identity" : "c",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/0xOpenBytes/c",
-      "state" : {
-        "revision" : "9477c47d3802d983580fb0770c9869c9e9330a37",
-        "version" : "0.3.0"
+  "object": {
+    "pins": [
+      {
+        "package": "c",
+        "repositoryURL": "https://github.com/0xOpenBytes/c",
+        "state": {
+          "branch": null,
+          "revision": "9477c47d3802d983580fb0770c9869c9e9330a37",
+          "version": "0.3.0"
+        }
+      },
+      {
+        "package": "CacheStore",
+        "repositoryURL": "https://github.com/0xOpenBytes/CacheStore",
+        "state": {
+          "branch": "feature/scope",
+          "revision": "84d2b8dc03fdf8863182c6660e326aab947b0154",
+          "version": null
+        }
+      },
+      {
+        "package": "FLet",
+        "repositoryURL": "https://github.com/0xOpenBytes/FLet",
+        "state": {
+          "branch": null,
+          "revision": "35a4a21a058661e59556c2870e5ed2351f58622f",
+          "version": "1.1.0"
+        }
+      },
+      {
+        "package": "o",
+        "repositoryURL": "https://github.com/0xOpenBytes/o",
+        "state": {
+          "branch": null,
+          "revision": "2721b5d5feab371ab6e6999a557f9c80f0426228",
+          "version": "0.2.1"
+        }
+      },
+      {
+        "package": "t",
+        "repositoryURL": "https://github.com/0xOpenBytes/t",
+        "state": {
+          "branch": null,
+          "revision": "78294df737c524f40267bca42beb8e10ca28aa41",
+          "version": "0.2.0"
+        }
       }
-    },
-    {
-      "identity" : "cachestore",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/0xOpenBytes/CacheStore",
-      "state" : {
-        "revision" : "480164c3a9acec9deb5558ec36424b23a5a1c3a3",
-        "version" : "1.0.0"
-      }
-    },
-    {
-      "identity" : "flet",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/0xOpenBytes/FLet",
-      "state" : {
-        "revision" : "35a4a21a058661e59556c2870e5ed2351f58622f",
-        "version" : "1.1.0"
-      }
-    },
-    {
-      "identity" : "o",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/0xOpenBytes/o",
-      "state" : {
-        "revision" : "2721b5d5feab371ab6e6999a557f9c80f0426228",
-        "version" : "0.2.1"
-      }
-    },
-    {
-      "identity" : "t",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/0xOpenBytes/t",
-      "state" : {
-        "revision" : "78294df737c524f40267bca42beb8e10ca28aa41",
-        "version" : "0.2.0"
-      }
-    }
-  ],
-  "version" : 2
+    ]
+  },
+  "version": 1
 }
